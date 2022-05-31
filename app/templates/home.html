@@ -6,11 +6,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="it">
-  <meta name="keywords" content="AI, Emotion Detector, AI Project, Deep Learning">
+  <meta name="keywords" content="AI, AI Project, Deep Learning">
   
   <meta name="author" content="">
 
-  <title>Emotion Detector</title>
+  <title>Chess Eye</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/static/plugins/fontawesome/css/all.css">
 
@@ -38,7 +38,7 @@
                 <img src="{{ url_for('static', filename='images1/ai camp logo1.svg')}}" width="55" height="55" alt="">
               </a>
             <a class="navbar-brand" href="#">
-                <h3>Emotion Detector</h3>
+                <h3>Chess Piece Detector</h3>
             </a>
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,13 +103,12 @@
                    <div class="banner-content2 text-center style-2">
                         <!-- Heading -->
                         <h1 class="display-4 mb-4 ">
-                            AI Emotion Recognition
+                            Chess Pieces Recognition
                         </h1>
 
                         <!-- Subheading -->
                         <p class="lead mb-5 pr-0">
-                            Created with love from AI Camp @ Stanford StartX.<br>
-An AI project made by high school students.
+                            A MVP for Computer Vision<br>
                         </p>
 
                         <!-- Button -->
@@ -118,7 +117,7 @@ An AI project made by high school students.
                                     <input id="seefood_input_field" name="file" type="file" onchange="this.form.submit();" hidden/>
                                 </form>
                                 <button href="#" target="_blank" class="btn btn-white btn-circled btn-text">
-                                    <i class="fas fa-camera pr-2 left" aria-hidden="true"></i> Click to see emotion
+                                    <i class="fas fa-camera pr-2 left" aria-hidden="true"></i> Upload Chess Image
                                 </button>
                             </a>
                         </div>
@@ -128,125 +127,8 @@ An AI project made by high school students.
         </div> <!-- / .container -->
     </section>
 
-    <section>
-          <div class = "row no-gutters">
-              <div class = "col">
-                  <img src="{{ url_for('static', filename='images1/happy-450x450-450x450.png')}}" class="img-fluid"/>
-              </div>
-              <div class = "col">
-                <img src="{{ url_for('static', filename='images1/neutral.png')}}" class="img-fluid"/>
-            </div>
-            <div class = "col">
-                <img src="{{ url_for('static', filename='images1/sad.png')}}" class="img-fluid"/>
-            </div>
-            <div class = "col">
-                <img src="{{ url_for('static', filename='images1/suprised.png')}}" class="img-fluid"/>
-            </div>
-          </div>
-    </section>
     <a id="demo"></a>
-    <section class="section">
-        <div class="row align-items-center justify-content-center">
-            <div class="col text-center">
-                <div class="section-heading">
-                <h1 class="section-title mb-4 " >
-                    Watch Our Demo
-                </h1>
-                </div>
-                <iframe src="https://www.youtube.com/embed/xZYPPYvJsv4?modestbranding=1&controls=1&showinfo=0&rel=0&enablejsapi=1&version=3&mute=0&loop=0&playerapiid=iframe_YTP_1564558236662&origin=*&wmode=transparent&iv_load_policy=3&html5=1&widgetid=1&playlist=xZYPPYvJsv4" class="youtube-video-iframe"></iframe>
-                <p class="small-text top-margin"> This is an initial prototype of our detection model where we only tested two emotions: happy and neutral. Since then, our model can predict happy, neutral, surprised, and angry very well!  </p>
-            </div>
-        </div>
-    </section>
-
 <a id="meet_the_team"></a>
-<section class="section section-padding" id="services-2">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6 text-center">
-                    <div class="section-heading">
-                        <!-- Heading -->
-                        <h2 class="section-title section-title-padding mb-2 text-white">
-                            Meet the Team
-                        </h2>
-                    </div>
-                </div>
-            </div> <!-- / .row -->
-
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
-                    <div class="web-service-block">
-                        <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/beatrice.jpeg')}}">
-                        <h3>Beatrice Mihalache</h3>
-                        <p>Student at Los Gatos High School</p>
-                        <p>Beatrice enjoys the quick-paced learning style of AI Camp. She contributed to our data extraction and website frontend.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
-                    <div class="web-service-block">
-                        <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/ary.jpeg')}}">
-                        <h3>Aryansh Chikkere</h3>
-                        <p>Student at American High School</p>
-                        <p>Ari enjoys studying Physics and improving code. He built the initial backend of this website.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
-                    <div class="web-service-block">
-                        <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/thomas.jpeg')}}">
-                        <h3>Thomas Chen</h3>
-                        <p>Student at Irvington High School</p>
-                        <p>Thomas enjoys experimenting with code. He created a script to retrieve data from Bing and wrote the website HTML.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-6 col-md-6 ">
-                    <div class="web-service-block">
-                        <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/clement.jpeg')}}">
-                        <h3>Clement Ou</h3>
-                        <p>Student at Gunn High School</p>
-                        <p>Clement enjoys writing scripts and coding. He trained a neural network by using a deep learning instance in AWS.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-md-6 ">
-                    <div class="web-service-block">
-                        <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/muti.jpeg')}}">
-                        <h3>Muti Shuman</h3>
-                        <p>Student at Junipero Serra High School</p>
-                        <p>Muti enjoys playing basketball. He built scripts to capture data using OpenCV and prepared data for training.</p>
-                    </div>
-                </div>
-            </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6 text-center">
-                        <div class="section-heading">
-                            <!-- Heading -->
-                            <h2 class="section-title section-text">
-                                Our Intructors
-                            </h2>
-                        </div>
-                    </div>
-                </div> <!-- / .row -->
-    
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="web-service-block">
-                            <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/michael.jpeg')}}">
-                            <h3>Michael Ke Zhang</h3>
-                            <p>Stanford Ph.D</p>
-                            <p>Michael ran data teams at Blend Labs and Grab. He enjoys fishing and inspiring the next generation of students.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="web-service-block">
-                            <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/ying.jpeg')}}">
-                            <h3>Ying Jiang</h3>
-                            <p>Stanford Ph.D</p>
-                            <p>Ying is a Lead Data Scientist at Ericsson. She is passionate in education, data analysis, and continuous learning.</p>
-                        </div>
-                    </div>
-                </div>
-    </section>
-
 <a id="our_work"></a>
  <section class="section">
         <div class="container">
@@ -267,7 +149,8 @@ An AI project made by high school students.
             <div class="row justify-content-center align-items-end">
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-box">
-                        <div class="blog-img-box">
+                        <div class="blog-
+                                    -box">
                             <img src="{{ url_for('static', filename='images1/brain.jpeg')}}" alt="" class="img-fluid blog-img">
                         </div>
                         <div class="single-blog">
